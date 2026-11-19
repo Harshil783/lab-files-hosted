@@ -1,0 +1,22 @@
+; Smallest number from an array (GNUSim8085)
+LXI H,2000H
+MVI M,45H
+INX H
+MVI M,12H
+INX H
+MVI M,7AH
+INX H
+MVI M,03H
+INX H
+MVI M,5CH
+LXI H,2000H
+MVI C,04H
+MOV A,M
+LOOP: INX H
+CMP M
+JC SKIP        ; A < M: keep A
+MOV A,M
+SKIP: DCR C
+JNZ LOOP
+STA 2010H      ; result 03H
+HLT

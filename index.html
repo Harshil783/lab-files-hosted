@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A searchable collection of CAD lab practical source files, with in-browser code viewing and downloads.">
+  <meta name="theme-color" content="#0b1020">
+  <title>CAD Practicals — Lab Code Reference</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="eyebrow">Computer Architecture &amp; Design · Lab reference</div>
+      <h1>CAD Practicals<span style="color:#a8c7ff">.</span></h1>
+      <p class="lede">A clean reference library for lab programs. Find a practical, open the source code, copy it, or download the original file.</p>
+      <div class="stats">
+        <div class="stat"><strong>11</strong> source files</div>
+        <div class="stat"><strong>4</strong> language groups</div>
+        <div class="stat"><strong>01–12</strong> practical numbering</div>
+      </div>
+    </div>
+  </header>
+  <main class="main wrap">
+    <div class="toolbar">
+      <label class="search-wrap" aria-label="Search practicals">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+        <input id="search" type="search" placeholder="Search by practical, topic, or language…" autocomplete="off">
+      </label>
+      <span id="result-count" class="result-count" aria-live="polite">11 of 11 practicals</span>
+    </div>
+    <nav class="filters" aria-label="Filter by language">
+      <button class="filter active" data-filter="All" aria-pressed="true">All</button>
+      <button class="filter" data-filter="C Programs" aria-pressed="false">C Programs</button>
+      <button class="filter" data-filter="8085 Assembly" aria-pressed="false">8085 Assembly</button>
+      <button class="filter" data-filter="CUDA" aria-pressed="false">CUDA</button>
+      <button class="filter" data-filter="OpenCL" aria-pressed="false">OpenCL</button>
+    </nav>
+    <section id="practical-grid" class="grid" aria-label="Practical list"></section>
+    <div id="empty-state" class="empty-state" hidden>No practicals match that search. Try another term or filter.</div>
+    <p class="note"><strong>Note:</strong> This page displays and distributes your source files; it does not compile or execute them in the browser. CUDA and OpenCL programs still need a compatible development environment to run.</p>
+  </main>
+  <footer><div class="wrap footer-inner"><span>CAD Practicals · Personal lab reference</span><span>Source files are provided as uploaded.</span></div></footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
